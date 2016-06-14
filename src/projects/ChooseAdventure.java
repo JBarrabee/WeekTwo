@@ -31,7 +31,7 @@ public class ChooseAdventure {
 							boolean north = true;
 							System.out.println("You run North.  You want to find out what is causing them to run.");
 							System.out.println(
-									"The groud starts to shake.  A fleeing person you are attracted to falls down.");
+									"The ground starts to shake.  A fleeing person you are attracted to falls down.");
 							while (north) {
 								System.out.println(" Do you stop to help that person or do you continue North?");
 								String help = scan.next();
@@ -57,10 +57,10 @@ public class ChooseAdventure {
 								} // if not help
 								else {
 									System.out.println("You entered an incorrect response, Please try again");
-								} // if wrong entry
+								} // if wrong help
 							} // while north
 						} // if north
-						if (direction.toLowerCase().contains("s")) {
+						else if (direction.toLowerCase().contains("s")) {
 							boolean south = true;
 							System.out.println(
 									"You decide to run South.  You get to the Guardian building with the vault.");
@@ -113,7 +113,7 @@ public class ChooseAdventure {
 							} // while south
 						} // if South
 						else {
-							System.out.println("You entered an incorrect response, Please try again");
+							System.out.println(" f You entered an incorrect response, Please try again");
 						} // wrong direction
 					} // while Monday
 				} // if Monday
@@ -134,7 +134,7 @@ public class ChooseAdventure {
 						else if (hilary.toLowerCase().contains("n")) {
 							boolean doNotLike = true;
 							System.out.println(
-									"You don't like Hilary so you make a snide coment.  The person next to you is ");
+									"You don't like Hilary so you make a snide comment.  The person next to you is ");
 							System.out.println("offended and punches you in the stomach.");
 							while (doNotLike) {
 								System.out.println("Do you fight back or leave?");
